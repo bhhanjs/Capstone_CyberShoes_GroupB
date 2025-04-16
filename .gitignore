@@ -1,0 +1,26 @@
+# Thư mục chứa CSS biên dịch từ SASS
+/css/
+
+# File log
+*.log
+
+# MacOS
+.DS_Store
+
+# Node modules nếu có dùng npm
+node_modules/
+
+# Tệp hệ điều hành khác
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# SASS cache (nếu có)
+.sass-cache/
+*.css.map
+
+# VS Code folder (nếu dùng)
+.vscode/
+
+# .env file nếu có thông tin nhạy cảm
+.env
