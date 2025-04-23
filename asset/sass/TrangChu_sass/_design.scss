@@ -1,0 +1,117 @@
+.design-custom {
+  position: relative;
+
+  overflow: hidden;
+  padding: 0;
+  .container {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1624px;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 500px;
+    .design {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+
+      .design-left,
+      .design-right {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          inset: 0;
+          object-fit: cover;
+          display: block;
+        }
+        h1 {
+          font-size: 3rem;
+          font-weight: bold;
+          color: white;
+          margin: 0;
+        }
+        h3 {
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: white;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+        }
+        button {
+          padding: 10px 25px;
+          font-size: 0.95rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+      }
+      .design-left {
+        .design-textLeft {
+          position: absolute;
+          bottom: 60px;
+          left: 40px;
+          color: white;
+        }
+        .design-buttonLeft {
+          position: absolute;
+          bottom: 10px;
+          left: 40px;
+          button {
+            background-color: white;
+            border: 1px solid black;
+            color: blue;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+              background-color: #4158d0;
+              background-image: linear-gradient(
+                43deg,
+                #4158d0 0%,
+                #c850c0 46%,
+                #ffcc70 100%
+              );
+              transition: all 0.5s;
+              color: white;
+              border-color: red;
+            }
+          }
+        }
+      }
+      .design-right {
+        .design-textRight {
+          position: absolute;
+          bottom: 60px;
+          left: 40px;
+          color: white;
+        }
+
+        .design-buttonRight {
+          position: absolute;
+          bottom: 10px;
+          left: 40px;
+
+          button {
+            background-color: white;
+            border: none;
+            color: black;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+              background-color: #4158d0;
+              background-image: linear-gradient(
+                43deg,
+                #4158d0 0%,
+                #c850c0 46%,
+                #ffcc70 100%
+              );
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

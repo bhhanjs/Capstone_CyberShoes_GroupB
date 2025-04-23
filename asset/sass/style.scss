@@ -1,0 +1,25 @@
+@import "./base/base";
+@import "./base/reset";
+
+//-------------Index.html--------------------
+//Header
+@import "./TrangChu_sass/header";
+//Banner
+@import "./TrangChu_sass/banner";
+// Custome-platforms
+@import "./TrangChu_sass/customePlatforms";
+// Profile-style
+@import "./TrangChu_sass/profile";
+//Design-custom
+@import "./TrangChu_sass/design";
+// product_Item
+@import "./TrangChu_sass/product-Item";
+//AllProduct
+@import "./TrangChu_sass/allProduct";
+//Sign Up-banner
+@import "./TrangChu_sass/signUpBanner";
+//Footer
+@import "./TrangChu_sass/footer";
+
+//--------------Register.html--------------------
+@import "./Register_sass/register";

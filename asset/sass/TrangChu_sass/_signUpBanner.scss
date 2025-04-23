@@ -1,0 +1,50 @@
+.signUp-banner {
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+  .container {
+    position: relative;
+    z-index: 2;
+    padding: 60px 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 500px;
+    cursor: pointer;
+    .signUp {
+      img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        z-index: 1;
+      }
+      .signUp-text {
+        position: absolute;
+        top: 23%;
+        left: 30%;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+        color: white;
+        h1 {
+          font-weight: bold;
+          font-size: 60px;
+        }
+        p {
+          .fw-bold {
+            &:hover {
+              color: rgba(145, 109, 109, 0.708);
+            }
+          }
+          .seeDetail {
+            &:hover {
+              color: rgba(145, 109, 109, 0.708);
+            }
+          }
+        }
+      }
+    }
+  }
+}
