@@ -1,0 +1,41 @@
+.custome-platforms {
+  padding: 25px 0;
+  .custome {
+    display: flex;
+    align-items: center;
+    gap: 170px;
+    .custome-img {
+      box-shadow: 0 2px 2px #e2ebfc;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        max-width: 800px;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+          transform: translateX(5px);
+        }
+      }
+    }
+    .custome-text {
+      font-size: 50px;
+      line-height: 2rem;
+      font-weight: 400;
+      flex-direction: column;
+
+      .option {
+        cursor: pointer;
+        transition: all 0.5s;
+        padding: 15px 20px;
+        border-radius: 8px;
+        color: black;
+        &:hover {
+          background-color: black;
+          color: white;
+          font-weight: bold;
+          transform: translateX(4px);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+}

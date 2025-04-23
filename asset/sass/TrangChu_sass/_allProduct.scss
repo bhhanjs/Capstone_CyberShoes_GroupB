@@ -1,0 +1,125 @@
+.all_Product {
+  padding: 3rem 0;
+
+  .item_Text {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h4 {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #7f8c8d;
+      margin-bottom: 0.5rem;
+
+      a {
+        color: #7f8c8d;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2d3436;
+    }
+  }
+
+  .items_Card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #d5cdcd;
+      border-radius: 9px;
+      margin: 0 8px;
+      padding: 16px;
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .tag {
+        position: absolute;
+        top: 0.75rem;
+        left: 0.75rem;
+        background: #dfe6e9;
+        color: #2d3436;
+        font-size: 0.7rem;
+        font-weight: bold;
+        padding: 0.25rem 0.6rem;
+        border-radius: 999px;
+        text-transform: uppercase;
+      }
+
+      button {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: #f1f2f6;
+        border: none;
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+
+        i {
+          color: #2d3436;
+          font-size: 1.1rem;
+        }
+
+        &:hover {
+          background-color: #dcdde1;
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border-radius: 6px;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #2d3436;
+      }
+
+      .price {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #111;
+        margin-bottom: 0.25rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+        color: #636e72;
+        margin-bottom: 0.25rem;
+      }
+
+      small {
+        font-size: 0.75rem;
+        color: #b2bec3;
+      }
+    }
+  }
+}
