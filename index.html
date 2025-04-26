@@ -181,87 +181,7 @@
           </div>
         </div>
         <div class="slider-container">
-          <div class="slider">
-            <!-- 1 -->
-            <div class="card">
-              <span class="tag">LIGHTWEIGHT</span>
-              <button><i class="fa-solid fa-cart-plus"></i></button>
-              <img
-                src="./asset/img/TrangChu_img/black_converse.jpg"
-                alt="Chuck Taylor"
-              />
-              <h3>Chuck Taylor All Star Lift Double Stack</h3>
-              <div class="price">95,00 €</div>
-
-              <p>UNISEX HIGH TOP SHOE</p>
-              <small>4 colors available</small>
-            </div>
-            <!-- 2 -->
-            <div class="card">
-              <span class="tag">LIGHTWEIGHT</span>
-              <button><i class="fa-solid fa-cart-plus"></i></button>
-              <img
-                src="./asset/img/TrangChu_img/black_converse.jpg"
-                alt="Chuck Taylor"
-              />
-              <h3>Chuck Taylor All Star Lift Double Stack</h3>
-              <div class="price">95,00 €</div>
-              <p>UNISEX HIGH TOP SHOE</p>
-              <small>4 colors available</small>
-            </div>
-            <!-- 3 -->
-            <div class="card">
-              <span class="tag">LIGHTWEIGHT</span>
-              <button><i class="fa-solid fa-cart-plus"></i></button>
-              <img
-                src="./asset/img/TrangChu_img/black_converse.jpg"
-                alt="Chuck Taylor"
-              />
-              <h3>Chuck Taylor All Star Lift Double Stack</h3>
-              <div class="price">95,00 €</div>
-              <p>UNISEX HIGH TOP SHOE</p>
-              <small>4 colors available</small>
-            </div>
-            <!-- 4 -->
-            <div class="card">
-              <span class="tag">LIGHTWEIGHT</span>
-              <button><i class="fa-solid fa-cart-plus"></i></button>
-              <img
-                src="./asset/img/TrangChu_img/black_converse.jpg"
-                alt="Chuck Taylor"
-              />
-              <h3>Chuck Taylor All Star Lift Double Stack</h3>
-              <div class="price">95,00 €</div>
-              <p>UNISEX HIGH TOP SHOE</p>
-              <small>4 colors available</small>
-            </div>
-            <!-- 5 -->
-            <div class="card">
-              <span class="tag">LIGHTWEIGHT</span>
-              <button><i class="fa-solid fa-cart-plus"></i></button>
-              <img
-                src="./asset/img/TrangChu_img/black_converse.jpg"
-                alt="Chuck Taylor"
-              />
-              <h3>Chuck Taylor All Star Lift Double Stack</h3>
-              <div class="price">95,00 €</div>
-              <p>UNISEX HIGH TOP SHOE</p>
-              <small>4 colors available</small>
-            </div>
-            <!-- 6 -->
-            <div class="card">
-              <span class="tag">LIGHTWEIGHT</span>
-              <button><i class="fa-solid fa-cart-plus"></i></button>
-              <img
-                src="./asset/img/TrangChu_img/black_converse.jpg"
-                alt="Chuck Taylor"
-              />
-              <h3>Chuck Taylor All Star Lift Double Stack</h3>
-              <div class="price">95,00 €</div>
-              <p>UNISEX HIGH TOP SHOE</p>
-              <small>4 colors available</small>
-            </div>
-          </div>
+          <div id="slider" class="slider"></div>
         </div>
       </div>
     </section>
@@ -517,21 +437,8 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-      $(".slider").slick({
-        slidesToShow: 5,
-        arrows: true,
-        dots: true,
-        infinite: false,
-        prevArrow: `<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>`,
-        nextArrow: `<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>`,
 
-        responsive: [
-          { breakpoint: 1024, settings: { slidesToShow: 2 } },
-          { breakpoint: 768, settings: { slidesToShow: 1 } },
-        ],
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../../asset/src/TrangChu_js/index.js"></script>
   </body>
 </html>
