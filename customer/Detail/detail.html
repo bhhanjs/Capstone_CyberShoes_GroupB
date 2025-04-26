@@ -8,6 +8,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="../../node_modules/swiper/swiper-bundle.min.css"
+    />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -16,7 +21,6 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
     <!-- Fontawesome -->
     <link
       rel="stylesheet"
@@ -37,16 +41,776 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../css/style.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="../../asset/css/details.css" />
   </head>
 
   <body>
+    <!-- HEADER -->
+    <header>
+      <!-- header top -->
+      <div class="header__top bg-black py-3 border-bottom">
+        <div
+          class="container d-flex justify-content-between align-items-center text-center text-md-start"
+        >
+          <!-- Left: Language -->
+          <div class="header__top__lang">
+            <img src="../../asset/img/Detai_img/fr.svg" alt="Flag" class="" />
+            <span class="text-white">FR | EN</span>
+          </div>
+
+          <!-- Middle: Info and Link -->
+          <div class="header__top__info d-none d-md-block">
+            <span class="text-white">20% Off for New Customer.</span>
+            <a href="#" class="ms-2">Sing up now!</a>
+          </div>
+
+          <!-- Right: Help and Sign In -->
+          <div class="header__top__features">
+            <a href="#" class="text-decoration-none me-3">Help</a>
+            <a href="#" class="text-decoration-none"
+              >Sign In <i class="fa-regular fa-user ps-2"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- header below -->
+      <nav
+        class="header__below navbar-expand-lg navbar-light bg-white border-bottom py-2"
+      >
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <!-- Store Name logo (Switch places on small screens with nav) -->
+          <div class="header__below__logo text-center text-lg-start">
+            <a
+              class="navbar-brand fw-bolder text-uppercase d-flex justify-content-center"
+              href="#"
+              >Converse
+              <img
+                src="../../asset/img/Detai_img/icon-converse-fill-def.jpg"
+                alt=""
+            /></a>
+          </div>
+
+          <!-- Navbar toggler -->
+
+          <div
+            class="navbar-toggler d-flex d-lg-none justify-content-between align-items-start gap-5"
+          >
+            <button
+              class="navbar-toggler order-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#dropdownMenu"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div class="navbar-collapse collapse" id="dropdownMenu">
+              <ul class="list-unstyled d-flex flex-column gap-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Women</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kids</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Custom</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Launch</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sale</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Nav Links -->
+          <div class="navbar-display justify-content-center d-none d-lg-block">
+            <ul class="navbar-nav d-lg-flex justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Custom</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Launch</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Features Icons -->
+          <div class="header__below__features d-none d-lg-flex gap-3">
+            <a href="#" class=""
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+            <a href="#" class=""><i class="fa-regular fa-heart"></i></a>
+            <a href="#" class=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAINS -->
+    <!-- MAIN PRODUCT -->
+    <section class="main py-4">
+      <div class="main__container container">
+        <div class="main__row row">
+          <!-- col left -->
+          <div
+            class="main__col__left col-12 col-md-6 col-lg-8 flex flex-column"
+          >
+            <!-- product image -->
+            <div class="product__image flex-fill d-flex flex-column">
+              <div class="product__image__primary">
+                <img
+                  src="../../asset/img/Detai_img/A16168C_A_107X1_White.jpg"
+                  alt=""
+                  class="w-100 h-auto"
+                />
+              </div>
+              <div class="product__image__subs d-flex flex-wrap">
+                <div class="subImage">
+                  <img
+                    src="../../asset/img/Detai_img/A16168C_C_08X1.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="subImage">
+                  <img
+                    src="../../asset/img/Detai_img/A16168C_E_08X1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="subImage">
+                  <img
+                    src="../../asset/img/Detai_img/A16168C_F_08X1.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="subImage">
+                  <img
+                    src="../../asset/img/Detai_img/A16168C_G_08X1.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="subImage">
+                  <img
+                    src="../../asset/img/Detai_img/A16168C_B_08X1.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="subImage">
+                  <img
+                    src="../../asset/img/Detai_img/A16168C_D_08X1.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- product details -->
+            <div class="product__details flex-fill p-3 mt-5">
+              <div class="product__details__container w-75">
+                <h2 class="fw-light">OLD-SCHOOL LOOK. NEW-SCHOOL FEEL.</h2>
+                <p class="my-4">
+                  Inspired by your favorite '80s running shoes, the Omega
+                  Trainer delivers lightweight comfort, fine-tuned for the
+                  streets.
+                </p>
+                <h6 class="fw-bold mb-3">Product Details</h6>
+                <ul class="">
+                  <li>
+                    Mesh upper with suede hits inspired by styles from the '80s
+                  </li>
+                  <li>
+                    Converse Comfort sockliner helps provide optimal comfort/li>
+                  </li>
+                  <li>
+                    A lightweight EVA midsole helps provide optimal comfort
+                    without the bulk
+                  </li>
+                  <li>Pops of color express your style</li>
+                  <li>
+                    Star Chevron reps the Converse legacy of sport and street
+                    style
+                  </li>
+                  <li>SKU: A16168C</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- col right -->
+          <div class="main__col__right col-12 col-md-6 col-lg-4">
+            <!-- product info -->
+            <div class="product__info p-5 pt-2 position-sticky top-0">
+              <!-- info basic -->
+              <div
+                class="info__basic d-flex flex-column align-items-start justify-content-center"
+              >
+                <h4>Omega Trainer Color Pop</h4>
+                <p class="price">85.00 €</p>
+                <p class="sub__title">Unisex Low Top Shoe</p>
+                <p>
+                  Sport-inspired. Lasting style. New color combos.
+                  <a href="#">More Info</a>
+                </p>
+              </div>
+              <hr />
+              <!-- info color -->
+              <div class="info__color pt-3 pb-2">
+                <p>
+                  <span class="text-black fw-medium">Color:</span> Vintage
+                  White/Vaporous Gray
+                </p>
+                <img
+                  src="../../asset/img/Detai_img/A16168C_A_107X1_White.jpg"
+                  alt=""
+                />
+              </div>
+              <hr />
+              <!-- info size -->
+              <div class="info__size d-flex flex-column gap-4 py-3">
+                <div
+                  class="info__size__guide d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <i class="fa-solid fa-pen-ruler"></i
+                    ><span>This style runs true to size.</span>
+                  </div>
+
+                  <a href="#">Size Guide</a>
+                </div>
+                <select
+                  class="info__size__select form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected>Select a size</option>
+                  <option>35</option>
+                  <option>36</option>
+                  <option>37</option>
+                  <option>38</option>
+                  <option>39</option>
+                  <option>40</option>
+                  <option>41</option>
+                  <option>42</option>
+                  <option>43</option>
+                </select>
+              </div>
+
+              <!-- info cart -->
+              <div class="info__cart d-flex w-100 py-3">
+                <button class="info__cart__button w__85 py-3">
+                  Add to Cart
+                </button>
+                <button class="info__cart__button w__15 py-3 flex-grow-1">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <!-- info share -->
+              <div
+                class="info__share py-4 d-flex flex-column justify-content-center align-items-start gap-4"
+              >
+                <div class="info__share__socials">
+                  <a href="#">Share</a>
+                </div>
+                <div class="info__share__signup py-3 px-4">
+                  <p class="mb-0">
+                    Be the first to hear about product launches, collaborations,
+                    and more. <span><a href="#">Sign up</a></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA PRODUCTS -->
+    <section class="sub__main mt-3 py-4 border-top border-1 border-black">
+      <div class="sub__main__container container">
+        <h2 class="sub__main__title text-black text-center">
+          You May Also Like
+        </h2>
+        <!-- Slider main container -->
+        <div class="sub__main__content d-flex justify-content-center">
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides 1 -->
+              <div class="swiper-slide">
+                <div class="slide__title">
+                  <!-- slide__title__img  -->
+                  <div class="slide__title__img">
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_C_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-default"
+                    />
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_D_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-hover"
+                    />
+                  </div>
+                  <div class="slide__title__action">
+                    <a href="#" class=""
+                      >Quick Shop
+                      <span class=""
+                        ><i class="fa-solid fa-cart-shopping"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <!-- slide__content  -->
+                <div class="slide__content">
+                  <h6 class="slide__content__title">Omega Trainer Color Pop</h6>
+                  <p class="slide__content__price">85,00 €</p>
+                  <p>Unisex Low Top Shoe</p>
+                </div>
+              </div>
+
+              <!-- Slides 2 -->
+              <div class="swiper-slide">
+                <div class="slide__title">
+                  <!-- slide__title__img  -->
+                  <div class="slide__title__img">
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_C_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-default"
+                    />
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_D_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-hover"
+                    />
+                  </div>
+                  <div class="slide__title__action">
+                    <a href="#" class=""
+                      >Quick Shop
+                      <span class=""
+                        ><i class="fa-solid fa-cart-shopping"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <!-- slide__content  -->
+                <div class="slide__content">
+                  <h6 class="slide__content__title">Omega Trainer Color Pop</h6>
+                  <p class="slide__content__price">85,00 €</p>
+                  <p>Unisex Low Top Shoe</p>
+                </div>
+              </div>
+
+              <!-- Slides 3 -->
+              <div class="swiper-slide">
+                <div class="slide__title">
+                  <!-- slide__title__img  -->
+                  <div class="slide__title__img">
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_C_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-default"
+                    />
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_D_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-hover"
+                    />
+                  </div>
+                  <div class="slide__title__action">
+                    <a href="#" class=""
+                      >Quick Shop
+                      <span class=""
+                        ><i class="fa-solid fa-cart-shopping"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <!-- slide__content  -->
+                <div class="slide__content">
+                  <h6 class="slide__content__title">Omega Trainer Color Pop</h6>
+                  <p class="slide__content__price">85,00 €</p>
+                  <p>Unisex Low Top Shoe</p>
+                </div>
+              </div>
+
+              <!-- Slides 4 -->
+              <div class="swiper-slide">
+                <div class="slide__title">
+                  <!-- slide__title__img  -->
+                  <div class="slide__title__img">
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_C_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-default"
+                    />
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_D_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-hover"
+                    />
+                  </div>
+                  <div class="slide__title__action">
+                    <a href="#" class=""
+                      >Quick Shop
+                      <span class=""
+                        ><i class="fa-solid fa-cart-shopping"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <!-- slide__content  -->
+                <div class="slide__content">
+                  <h6 class="slide__content__title">Omega Trainer Color Pop</h6>
+                  <p class="slide__content__price">85,00 €</p>
+                  <p>Unisex Low Top Shoe</p>
+                </div>
+              </div>
+
+              <!-- Slides 5 -->
+              <div class="swiper-slide">
+                <div class="slide__title">
+                  <!-- slide__title__img  -->
+                  <div class="slide__title__img">
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_C_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-default"
+                    />
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_D_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-hover"
+                    />
+                  </div>
+                  <div class="slide__title__action">
+                    <a href="#" class=""
+                      >Quick Shop
+                      <span class=""
+                        ><i class="fa-solid fa-cart-shopping"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <!-- slide__content  -->
+                <div class="slide__content">
+                  <h6 class="slide__content__title">Omega Trainer Color Pop</h6>
+                  <p class="slide__content__price">85,00 €</p>
+                  <p>Unisex Low Top Shoe</p>
+                </div>
+              </div>
+
+              <!-- Slides 6 -->
+              <div class="swiper-slide">
+                <div class="slide__title">
+                  <!-- slide__title__img  -->
+                  <div class="slide__title__img">
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_C_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-default"
+                    />
+                    <img
+                      src="../../asset/img/Detai_img/extra_products/A11168C_D_08X1.jpg"
+                      alt=""
+                      class="title__img title__img-hover"
+                    />
+                  </div>
+                  <div class="slide__title__action">
+                    <a href="#" class=""
+                      >Quick Shop
+                      <span class=""
+                        ><i class="fa-solid fa-cart-shopping"></i></span
+                    ></a>
+                  </div>
+                </div>
+                <!-- slide__content  -->
+                <div class="slide__content">
+                  <h6 class="slide__content__title">Omega Trainer Color Pop</h6>
+                  <p class="slide__content__price">85,00 €</p>
+                  <p>Unisex Low Top Shoe</p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-2 mt-md-4 pt-md-4">
+      <!-- footer top -->
+      <div class="footer__top">
+        <!-- collapse toggle list >md screen -->
+        <div class="footer__collapse d-block d-md-none">
+          <!-- actions -->
+          <div
+            class="footer__top__action bg-black d-flex justify-content-between align-items-center"
+          >
+            <button class="btn"><a href="#">Order Status</a></button>
+            <button class="btn rounded-0 border-start border-secondary">
+              <a href="#">Find Store</a>
+            </button>
+          </div>
+          <!-- get help -->
+          <div class="item__collapse footer__top__help">
+            <button
+              class="btn btn-link text-black bg-white text-decoration-none text-start w-100 rounded-0 border-bottom border-secondary-subtle py-3 d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse"
+              data-bs-target="#footerHelp"
+              aria-expanded="false"
+            >
+              Get Help
+              <i class="fas fa-chevron-down rotate-icon"></i>
+            </button>
+            <div id="footerHelp" class="collapse__content collapse">
+              <ul>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Order/ Return</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Student Discount</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- about -->
+          <div class="item__collapse footer__top__about">
+            <button
+              class="btn btn-link text-start w-100 text-black bg-white text-decoration-none border-0 rounded-0 border-bottom border-secondary-subtle py-3 d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse"
+              data-bs-target="#footerAbout"
+              aria-expanded="false"
+            >
+              About the Store
+              <i class="fas fa-chevron-down rotate-icon"></i>
+            </button>
+            <div id="footerAbout" class="collapse__content collapse">
+              <ul>
+                <li><a href="#">Our Stories</a></li>
+                <li><a href="#">Career and Culture</a></li>
+                <li><a href="#">Nike.com</a></li>
+                <li><a href="#">Jordan.com</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- contact -->
+          <div class="footer__top__contact mt-5">
+            <div
+              class="footer__top__contact__container w-75 mx-auto d-flex flex-column justify-content-center align-items-center"
+            >
+              <h4 class="mb-3">Sign up for news and updates</h4>
+              <p class="w-50 mx-auto text-center mb-5">
+                Be the first to hear about new products, collaborations, and
+                offers plus get 20% OFF* your next order.
+              </p>
+
+              <div class="input-group w-50 mx-auto mb-5">
+                <input
+                  type="email"
+                  class="form-control rounded-0 py-2 px-3"
+                  placeholder="Enter your emails"
+                />
+                <button
+                  class="btn bg-black text-white rounded-0 py-2 px-3"
+                  type="button"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+
+              <div
+                class="social__group d-flex justify-content-between align-items-center mb-5"
+              >
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </div>
+
+              <div class="extra__info d-flex justify-content-between">
+                <p><a href="#">Term of use</a></p>
+                <p><a href="#">Supply chain</a></p>
+                <p><a href="#">Privacy & Cookie Policy</a></p>
+                <p><a href="#">Cooking Setting</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- full collumn dispay <m screen -->
+        <div
+          class="footer__diplay container d-none d-md-flex justify-content-between px-5"
+        >
+          <!-- contact -->
+          <div
+            class="contact w-25 px-5 d-flex flex-column justify-content-start"
+          >
+            <h6 class="mb-3">Sign up for news and updates</h6>
+            <p class="">
+              Be the first to hear about new products, collaborations, and
+              offers plus get 20% OFF* your next order.
+            </p>
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control rounded-0 py-2 px-3"
+                placeholder="Enter your emails"
+              />
+              <button
+                class="btn bg-black text-white rounded-0 py-2 px-3"
+                type="button"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <!-- follow us -->
+          <div
+            class="follow__us w-25 px-5 d-flex flex-column justify-content-start"
+          >
+            <p><a href="#">Order Status</a></p>
+            <p><a href="#">Find a store</a></p>
+
+            <h6 class="mt-4">Follow Us:</h6>
+            <div class="social__links mt-4">
+              <a href="">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- get help -->
+          <div
+            class="get__help w-25 px-5 d-flex flex-column justify-content-start"
+          >
+            <h6>Get Help</h6>
+            <ul class="ps-0">
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Order/ Return</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Payment Options</a></li>
+              <li><a href="#">Student Discount</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- about -->
+          <div class="about w-25 px-5 d-flex flex-column justify-content-start">
+            <h6>About</h6>
+            <ul class="ps-0">
+              <li><a href="#">Our Stories</a></li>
+              <li><a href="#">Career and Culture</a></li>
+              <li><a href="#">Nike.com</a></li>
+              <li><a href="#">Jordan.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer bottom -->
+      <div class="footer__bottom bg-black py-4">
+        <div class="container">
+          <div
+            class="footer__bottom__container d-flex justify-content-between align-items-center"
+          >
+            <div class="footer__lang">
+              <img src="../../asset/img/Detai_img/fr.svg" alt="" />
+              <span>FR | EN</span>
+            </div>
+            <div
+              class="footer__extraInfo d-none d-md-flex justify-content-between align-items-center"
+            >
+              <p><a href="#">Term of use</a></p>
+              <p><a href="#">Supply chain</a></p>
+              <p><a href="#">Privacy & Cookie Policy</a></p>
+              <p><a href="#">Cooking Setting</a></p>
+            </div>
+            <div class="footer__copyright">
+              <p>©2025Converse</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
 
+    <!-- swiper -->
+    <script src="../../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        // Optional parameters
+        slidesPerView: 3,
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        //   draggable: true,
+        //   hide: false,
+        // },
+      });
+    </script>
+
+    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"

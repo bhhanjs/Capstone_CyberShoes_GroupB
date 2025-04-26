@@ -1,0 +1,148 @@
+.main {
+  .main__container {
+    .main__row {
+      .main__col__left {
+        .product__image {
+          // .product__image__primary {
+          // }
+          .product__image__subs {
+            .subImage {
+              width: 50%;
+              padding: 10px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+        .product__details {
+          .product__details__container {
+            p {
+              font-size: 12px;
+            }
+            h6 {
+              font-size: 14px;
+            }
+            ul {
+              font-size: 12px;
+
+              li {
+                margin: 8px 0;
+              }
+            }
+          }
+        }
+      }
+      .main__col__right {
+        .product__info {
+          .info__basic {
+            h4 {
+              font-size: 20px;
+              font-weight: 500;
+            }
+            .price {
+              font-size: 14px;
+              margin-bottom: 5px;
+            }
+            .sub__title {
+              color: #9b9b9b;
+              font-size: 12px;
+              font-weight: 600;
+            }
+            p:last-child {
+              font-size: 14px;
+
+              a {
+                color: #9b9b9b;
+                font-size: 14px;
+              }
+            }
+          }
+          .info__color {
+            p {
+              font-size: 14px;
+            }
+            img {
+              width: 75px;
+              height: auto;
+              border-bottom: 2px solid black;
+              cursor: pointer;
+            }
+          }
+
+          .info__size {
+            .info__size__guide {
+              div {
+                i {
+                  font-size: 15px;
+                  color: #9b9b9b;
+                }
+                span {
+                  font-size: 11px;
+                  margin-left: 8px;
+                }
+              }
+              a {
+                color: black;
+                font-size: 11px;
+                font-weight: 500;
+              }
+            }
+            .info__size__select {
+              border-radius: 0;
+              padding: 1rem 1rem;
+              font-size: 14px;
+              color: black;
+              font-weight: 500;
+              border: solid 2px #e5e5e5;
+
+              &.form-select:focus {
+                border-color: #e5e5e5;
+                box-shadow: none;
+              }
+            }
+          }
+          .info__cart {
+            .info__cart__button {
+              display: inline-block;
+              border: none;
+              border-radius: none;
+              background-color: black;
+              color: white;
+              cursor: pointer;
+              font-size: 14px;
+
+              &.w__85 {
+                width: 85%;
+                margin-right: 1.5px;
+              }
+              &.W__15 {
+                width: 15%;
+              }
+            }
+          }
+        }
+
+        .info__share {
+          .info__share__socials {
+            a {
+              color: black;
+              font-size: 12px;
+            }
+          }
+          .info__share__signup {
+            background-color: #e5e5e5;
+            p {
+              font-size: 10px;
+
+              a {
+                color: black;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
