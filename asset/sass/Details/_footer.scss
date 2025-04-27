@@ -117,16 +117,15 @@ footer {
 
         .input-group {
           input {
-            &:focus{
+            &:focus {
               box-shadow: none;
-              border-color:#8a8a8a;
+              border-color: #8a8a8a;
             }
           }
         }
       }
 
       .follow__us {
-        height: 100%;
         border-right: 1px solid #dee2e6;
         padding: 25px 0;
 
@@ -171,7 +170,6 @@ footer {
       }
 
       .get__help {
-        height: 100%;
         border-right: 1px solid #dee2e6;
         padding: 25px 0;
 
