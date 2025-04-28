@@ -14,36 +14,71 @@ options.forEach((option) => {
   });
 });
 ///////////////////
-let items_Card = document.querySelector("#items_Card");
-let productPromise = axios({
-  url: "https://shop.cyberlearn.vn/api/Product",
-  method: "GET",
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
+// let items_Card = document.querySelector("#items_Card");
+// let productPromise = axios({
+//   url: "https://shop.cyberlearn.vn/api/Product",
+//   method: "GET",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// });
 
-productPromise
+// productPromise
+//   .then((response) => {
+//     let products = response.data.content;
+//     console.log("Product", products);
+//     products.forEach((product, index) => {
+//       let content = `
+//             <div class="card">
+//               <span class="tag">${product.name}</span>
+//               <button><i class="fa-solid fa-cart-plus"></i></button>
+//                <a href="./detail.html?productID=id" class="slide__img-link">
+//               <img src="${product.image}" alt="${product.name}" />
+//               </a>
+//               <h3>${product.alias}</h3>
+//               <div class="price">${product.price} đ</div>
+//               <p>${product.shortDescription}</p>
+//               <small>Size: ${product.size}</small>
+//             </div>`;
+//       items_Card.innerHTML += content;
+//     });
+//   })
+//   .catch((err) => {
+//     console.log("Can't get api: ", err.message);
+//   });
+
+const http = axios.create({
+  baseURL: "https://shop.cyberlearn.vn/api",
+  timeout: 5000,
+});
+let items_Card = document.querySelector("#items_Card");
+
+http
+  .get("/Product")
   .then((response) => {
     let products = response.data.content;
     console.log("Product", products);
     products.forEach((product, index) => {
       let content = `
-            <div class="card">
-              <span class="tag">${product.name}</span>
-              <button><i class="fa-solid fa-cart-plus"></i></button>
-              <img src="${product.image}" alt="${product.name}" />
-              <h3>${product.alias}</h3>
-              <div class="price">${product.price} đ</div>
-              <p>${product.shortDescription}</p> 
-              <small>Size: ${product.size}</small>
-            </div>`;
+        <div class="card">
+          <span class="tag">${product.name}</span>
+          <button><i class="fa-solid fa-cart-plus"></i></button>
+           <a href="/customer/Detail/detail.html?productID=${product.id}" class="slide__img-link">
+
+            <img src="${product.image}" alt="${product.name}" />
+          </a>
+          <h3>${product.alias}</h3>
+          <div class="price">${product.price} đ</div>
+          <p>${product.shortDescription}</p> 
+          <small>Size: ${product.size}</small>
+        </div>`;
       items_Card.innerHTML += content;
     });
   })
   .catch((err) => {
     console.log("Can't get api: ", err.message);
   });
+
 //-----------API paging---------------
 
 let slider = document.querySelector("#slider");
@@ -66,7 +101,10 @@ productPromise2
           <div class="card">
            <span class="tag">${product.name}</span>
               <button><i class="fa-solid fa-cart-plus"></i></button>
-              <img src="${fullImageUrl}" alt="${product.name}" />
+             <a href="/customer/Detail/detail.html?productID=${product.id}">
+  <img src="${fullImageUrl}" alt="${product.name}" />
+</a>
+
               <h3>${product.alias}</h3>
               <div class="price">${product.price} đ</div>
               <p>${product.shortDescription}</p> 

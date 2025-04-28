@@ -16,7 +16,7 @@ const renderProductCarousel = function (products) {
         <div class="slide__title">
           <!-- slide__title__img  -->
           <div class="slide__title__img">
-            <a href="./detail.html?productID=${id}" class="slide__img-link">
+            <a href="/customer/Detail/detail.html?productID=${product.id}" class="slide__img-link">
               <img
                 src=${image}
                 alt=""
@@ -60,9 +60,11 @@ const renderProductDetails = function (product) {
   let { name, id, price, image, shortDescription, description, alias, size } =
     product;
 
-  let sizes = size.map(size => {
-    return `<option>${size}</option>` 
-  }).join("")
+  let sizes = size
+    .map((size) => {
+      return `<option>${size}</option>`;
+    })
+    .join("");
 
   let mainContainer = document.querySelector(".main__container ");
   let content = `
