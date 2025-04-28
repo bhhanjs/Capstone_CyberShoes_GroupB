@@ -205,7 +205,9 @@ const renderProductDetails = function (product) {
 
           <!-- info cart -->
           <div class="info__cart d-flex w-100 py-3">
-            <button class="info__cart__button w__85 py-3">
+            <button onclick='saveToCart(${JSON.stringify(
+              product
+            )})' class="info__cart__button w__85 py-3">
               Add to Cart
             </button>
             <button class="info__cart__button w__15 py-3 flex-grow-1">
@@ -271,6 +273,27 @@ window.onload = function () {
         console.log(err);
       });
   }
+};
+
+//Set local storage of Cart
+window.saveToCart = function (product) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existingIndex = cart.findIndex((item) => item.id === product.id);
+  if (existingIndex !== -1) {
+    cart[existingIndex].quantity += 1;
+  } else {
+    cart.push({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image,
+      description: product.shortDescription,
+      size: product.size || "M",
+      quantity: 1,
+    });
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Đã thêm vào giỏ hàng!");
 };
 
 // `

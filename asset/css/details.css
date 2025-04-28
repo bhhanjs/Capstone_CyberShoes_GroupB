@@ -95,7 +95,6 @@ footer .footer__top .footer__diplay .contact .input-group input:focus {
   border-color: #8a8a8a;
 }
 footer .footer__top .footer__diplay .follow__us {
-  height: 100%;
   border-right: 1px solid #dee2e6;
   padding: 25px 0;
 }
@@ -134,7 +133,6 @@ footer .footer__top .footer__diplay .follow__us div a:last-child {
   border-right: none;
 }
 footer .footer__top .footer__diplay .get__help {
-  height: 100%;
   border-right: 1px solid #dee2e6;
   padding: 25px 0;
 }

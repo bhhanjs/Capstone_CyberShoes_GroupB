@@ -62,8 +62,13 @@ http
       let content = `
         <div class="card">
           <span class="tag">${product.name}</span>
-          <button><i class="fa-solid fa-cart-plus"></i></button>
-           <a href="/customer/Detail/detail.html?productID=${product.id}" class="slide__img-link">
+        <button onclick='saveToCart(${JSON.stringify(
+          product
+        )})'><i class="fa-solid fa-cart-plus"></i></button>
+
+           <a href="/customer/Detail/detail.html?productID=${
+             product.id
+           }" class="slide__img-link">
 
             <img src="${product.image}" alt="${product.name}" />
           </a>
@@ -100,10 +105,12 @@ productPromise2
       content += `
           <div class="card">
            <span class="tag">${product.name}</span>
-              <button><i class="fa-solid fa-cart-plus"></i></button>
+              <button onclick='saveToCart2(${JSON.stringify(
+                product
+              )})'><i class="fa-solid fa-cart-plus"></i></button>
              <a href="/customer/Detail/detail.html?productID=${product.id}">
-  <img src="${fullImageUrl}" alt="${product.name}" />
-</a>
+              <img src="${fullImageUrl}" alt="${product.name}" />
+              </a>
 
               <h3>${product.alias}</h3>
               <div class="price">${product.price} đ</div>
@@ -134,3 +141,44 @@ productPromise2
   .catch((error) => {
     console.error("Can't get API:", error.message);
   });
+
+//Shopping cart
+window.saveToCart = function (product) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existingIndex = cart.findIndex((item) => item.id === product.id);
+  if (existingIndex !== -1) {
+    cart[existingIndex].quantity += 1;
+  } else {
+    cart.push({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image,
+      description: product.shortDescription,
+      size: product.size || "M",
+      quantity: 1,
+    });
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Đã thêm vào giỏ hàng!");
+};
+//add to cart of Paging
+window.saveToCart2 = function (product) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existingIndex = cart.findIndex((item) => item.id === product.id);
+  if (existingIndex !== -1) {
+    cart[existingIndex].quantity += 1;
+  } else {
+    cart.push({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: `https://shop.cyberlearn.vn/images/${product.image}`,
+      description: product.shortDescription,
+      size: product.size || "M",
+      quantity: 1,
+    });
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Đã thêm vào giỏ hàng!");
+};
