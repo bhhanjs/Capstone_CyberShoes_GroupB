@@ -16,6 +16,14 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+    <!-- tostify -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
     <!-- Fontawesome -->
     <link
       rel="stylesheet"
@@ -36,76 +44,474 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../asset/css/details.css" />
   </head>
   <body>
+    <!-- header -->
     <header>
-      <div class="container">
-        <div class="header-content">
-          <a href="../../index.html" class="header-logo"
-            >Converse
-            <i class="fa-solid fa-shoe-prints"></i>
-          </a>
-          <nav class="header-item">
-            <ul>
-              <li><a href="#">New & Featured</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Kids</a></li>
-              <li><a href="#">Custom</a></li>
-              <li><a href="#">Launch</a></li>
-              <li><a href="#" class="active">Sale</a></li>
-            </ul>
-          </nav>
-          <div class="header-feature">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      <!-- header top -->
+      <div class="header__top bg-black py-3 border-bottom">
+        <div
+          class="container d-flex justify-content-between align-items-center text-center text-md-start"
+        >
+          <!-- Left: Language -->
+          <div class="header__top__lang">
+            <img src="../../asset/img/Detai_img/fr.svg" alt="Flag" class="" />
+            <span class="text-white">FR | EN</span>
+          </div>
+
+          <!-- Middle: Info and Link -->
+          <div class="header__top__info d-none d-md-block">
+            <span class="text-white">20% Off for New Customer.</span>
+            <a href="#" class="ms-2">Sing up now!</a>
+          </div>
+
+          <!-- Right: Help and Sign In -->
+          <div class="header__top__features">
+            <a href="#" class="text-decoration-none me-3">Help</a>
+            <a href="#" class="text-decoration-none"
+              >Sign In <i class="fa-regular fa-user ps-2"></i
+            ></a>
           </div>
         </div>
       </div>
-    </header>
-    <section class="register">
-      <div class="container">
-        <h2>Register</h2>
-        <form class="form-register">
-          <div class="form-left">
-            <label>email <span class="required">(*)</span></label>
-            <input type="email" required />
 
-            <label>password <span class="required">(*)</span></label>
-            <input type="password" required />
-
-            <label>password confirm <span class="required">(*)</span></label>
-            <input type="password" required />
+      <!-- header below -->
+      <nav
+        class="header__below navbar-expand-lg navbar-light bg-white border-bottom py-2"
+      >
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <!-- Store Name logo (Switch places on small screens with nav) -->
+          <div class="header__below__logo text-center text-lg-start">
+            <a
+              class="navbar-brand fw-bolder text-uppercase d-flex justify-content-center"
+              href="#"
+              >Converse
+              <img
+                src="../../asset/img/Detai_img/icon-converse-fill-def.jpg"
+                alt=""
+            /></a>
           </div>
 
-          <div class="form-right">
-            <label>name <span class="required">(*)</span></label>
-            <input type="text" required />
+          <!-- Navbar toggler -->
 
-            <label>phone <span class="required">(*)</span></label>
-            <input type="tel" required />
+          <div
+            class="navbar-toggler d-flex d-lg-none justify-content-between align-items-start gap-5"
+          >
+            <button
+              class="navbar-toggler order-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#dropdownMenu"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </button>
 
-            <div class="gender-group">
-              <label>Gender</label>
-              <div class="gender-options">
-                <label
-                  ><input type="radio" name="gender" checked />
-                  <span class="circle male"></span> Male</label
+            <!-- Dropdown menu -->
+            <div class="navbar-collapse collapse" id="dropdownMenu">
+              <ul class="list-unstyled d-flex flex-column gap-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Women</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kids</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Custom</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Launch</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sale</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Nav Links -->
+          <div class="navbar-display justify-content-center d-none d-lg-block">
+            <ul class="navbar-nav d-lg-flex justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Custom</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Launch</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Features Icons -->
+          <div class="header__below__features d-none d-lg-flex gap-3">
+            <a href="#" class=""
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+            <a href="#" class=""><i class="fa-regular fa-heart"></i></a>
+            <a href="#" class=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--  -->
+
+    <!-- register -->
+    <section class="register mb-5 pt-2 pb-5">
+      <div class="container my-5">
+        <!-- register title -->
+        <div class="register__title my-5 text-center text-capitalize">
+          <h1 class="mb-5">Register</h1>
+        </div>
+
+        <!-- register content -->
+        <div class="register__content pt-2">
+          <!-- register form -->
+          <form class="register__form row g-5 px-4">
+            <!-- Left Column -->
+            <div class="register__form__left col-md-6">
+              <!-- name -->
+              <div class="form-group mb-3">
+                <label for="name" class="form-label"
+                  >Name <span class="text-danger">*</span></label
                 >
-                <label
-                  ><input type="radio" name="gender" />
-                  <span class="circle female"></span> Female</label
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+                <div class="error-message" id="nameError"></div>
+              </div>
+
+              <!-- email -->
+              <div class="form-group mb-3">
+                <label for="email" class="form-label"
+                  >Email <span class="text-danger">*</span></label
                 >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <div class="error-message" id="emailError"></div>
+              </div>
+
+              <!-- phone -->
+              <div class="form-group mb-3">
+                <label for="phone" class="form-label"
+                  >Phone <span class="text-danger">*</span></label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+                <div class="error-message" id="phoneError"></div>
               </div>
             </div>
 
-            <button class="submit-btn" type="submit">Submit</button>
-          </div>
-        </form>
+            <!-- Right Column -->
+            <div class="register__form__right col-md-6">
+              <!-- password -->
+              <div class="form-group mb-3">
+                <label for="password" class="form-label"
+                  >Password <span class="text-danger">*</span></label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  required
+                />
+                <div class="error-message" id="passwordError"></div>
+              </div>
+
+              <!-- confirm Password -->
+              <div class="form-group mb-3">
+                <label for="confirmPassword" class="form-label"
+                  >Confirm Password <span class="text-danger">*</span></label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  required
+                />
+                <div class="error-message" id="confirmPasswordError"></div>
+              </div>
+
+              <!-- gender -->
+              <div class="form-group mb-3">
+                <label class="form-label d-block"
+                  >Gender <span class="text-danger">*</span></label
+                >
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="male"
+                    value="male"
+                  />
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="error-message" id="genderError"></div>
+              </div>
+
+              <!-- submit button -->
+              <div class="d-grid w-75 mt-4">
+                <button type="submit" class="register__form__btn btn mt-3">
+                  Register
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
+
+    <!-- footer  -->
+    <footer class="footer mt-2 mt-md-4 pt-md-4">
+      <!-- footer top -->
+      <div class="footer__top">
+        <!-- collapse toggle list >md screen -->
+        <div class="footer__collapse d-block d-md-none">
+          <!-- actions -->
+          <div
+            class="footer__top__action bg-black d-flex justify-content-between align-items-center"
+          >
+            <button class="btn"><a href="#">Order Status</a></button>
+            <button class="btn rounded-0 border-start border-secondary">
+              <a href="#">Find Store</a>
+            </button>
+          </div>
+          <!-- get help -->
+          <div class="item__collapse footer__top__help">
+            <button
+              class="btn btn-link text-black bg-white text-decoration-none text-start w-100 rounded-0 border-bottom border-secondary-subtle py-3 d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse"
+              data-bs-target="#footerHelp"
+              aria-expanded="false"
+            >
+              Get Help
+              <i class="fas fa-chevron-down rotate-icon"></i>
+            </button>
+            <div id="footerHelp" class="collapse__content collapse">
+              <ul>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Order/ Return</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Student Discount</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- about -->
+          <div class="item__collapse footer__top__about">
+            <button
+              class="btn btn-link text-start w-100 text-black bg-white text-decoration-none border-0 rounded-0 border-bottom border-secondary-subtle py-3 d-flex justify-content-between align-items-center"
+              data-bs-toggle="collapse"
+              data-bs-target="#footerAbout"
+              aria-expanded="false"
+            >
+              About the Store
+              <i class="fas fa-chevron-down rotate-icon"></i>
+            </button>
+            <div id="footerAbout" class="collapse__content collapse">
+              <ul>
+                <li><a href="#">Our Stories</a></li>
+                <li><a href="#">Career and Culture</a></li>
+                <li><a href="#">Nike.com</a></li>
+                <li><a href="#">Jordan.com</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- contact -->
+          <div class="footer__top__contact mt-5">
+            <div
+              class="footer__top__contact__container w-75 mx-auto d-flex flex-column justify-content-center align-items-center"
+            >
+              <h4 class="mb-3">Sign up for news and updates</h4>
+              <p class="w-50 mx-auto text-center mb-5">
+                Be the first to hear about new products, collaborations, and
+                offers plus get 20% OFF* your next order.
+              </p>
+
+              <div class="input-group w-50 mx-auto mb-5">
+                <input
+                  type="email"
+                  class="form-control rounded-0 py-2 px-3"
+                  placeholder="Enter your emails"
+                />
+                <button
+                  class="btn bg-black text-white rounded-0 py-2 px-3"
+                  type="button"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+
+              <div
+                class="social__group d-flex justify-content-between align-items-center mb-5"
+              >
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </div>
+
+              <div class="extra__info d-flex justify-content-between">
+                <p><a href="#">Term of use</a></p>
+                <p><a href="#">Supply chain</a></p>
+                <p><a href="#">Privacy & Cookie Policy</a></p>
+                <p><a href="#">Cooking Setting</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- full collumn dispay <m screen -->
+        <div
+          class="footer__diplay container d-none d-md-flex justify-content-between px-5"
+        >
+          <!-- contact -->
+          <div
+            class="contact w-25 px-5 d-flex flex-column justify-content-start"
+          >
+            <h6 class="mb-3">Sign up for news and updates</h6>
+            <p class="">
+              Be the first to hear about new products, collaborations, and
+              offers plus get 20% OFF* your next order.
+            </p>
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control rounded-0 py-2 px-3"
+                placeholder="Enter your emails"
+              />
+              <button
+                class="btn bg-black text-white rounded-0 py-2 px-3"
+                type="button"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <!-- follow us -->
+          <div
+            class="follow__us w-25 px-5 d-flex flex-column justify-content-start"
+          >
+            <p><a href="#">Order Status</a></p>
+            <p><a href="#">Find a store</a></p>
+
+            <h6 class="mt-4">Follow Us:</h6>
+            <div class="social__links mt-4">
+              <a href="">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- get help -->
+          <div
+            class="get__help w-25 px-5 d-flex flex-column justify-content-start"
+          >
+            <h6>Get Help</h6>
+            <ul class="ps-0">
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">Order/ Return</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Payment Options</a></li>
+              <li><a href="#">Student Discount</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- about -->
+          <div class="about w-25 px-5 d-flex flex-column justify-content-start">
+            <h6>About</h6>
+            <ul class="ps-0">
+              <li><a href="#">Our Stories</a></li>
+              <li><a href="#">Career and Culture</a></li>
+              <li><a href="#">Nike.com</a></li>
+              <li><a href="#">Jordan.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer bottom -->
+      <div class="footer__bottom bg-black py-4">
+        <div class="container">
+          <div
+            class="footer__bottom__container d-flex justify-content-between align-items-center"
+          >
+            <div class="footer__lang">
+              <img src="../../asset/img/Detai_img/fr.svg" alt="" />
+              <span>FR | EN</span>
+            </div>
+            <div
+              class="footer__extraInfo d-none d-md-flex justify-content-between align-items-center"
+            >
+              <p><a href="#">Term of use</a></p>
+              <p><a href="#">Supply chain</a></p>
+              <p><a href="#">Privacy & Cookie Policy</a></p>
+              <p><a href="#">Cooking Setting</a></p>
+            </div>
+            <div class="footer__copyright">
+              <p>©2025Converse</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -113,10 +519,23 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- toastify -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <!-- js -->
+    <script src="/asset/src/Register_Js/index.js"></script>
   </body>
 </html>

@@ -75,7 +75,7 @@ footer .footer__top .footer__collapse .footer__top__contact .footer__top__contac
   font-size: 10px;
 }
 footer .footer__top .footer__diplay {
-  border-top: 1px solid #dee2e6;
+  border: 1px solid #dee2e6;
 }
 footer .footer__top .footer__diplay .contact {
   height: 100%;
@@ -498,4 +498,32 @@ header .header__below .header__below__features:hover a:hover {
 }
 .sub__main .sub__main__container .sub__main__content .swiper .swiper-button-next {
   color: rgba(0, 0, 0, 0.832);
+}
+
+.register .register__content .register__form .register__form__left .form-group input {
+  padding: 10px 5px;
+}
+.register .register__content .register__form .register__form__left .form-group input:focus {
+  border-color: rgba(0, 0, 0, 0.438);
+  box-shadow: none;
+}
+.register .register__content .register__form .register__form__right .form-group input {
+  padding: 10px 5px;
+}
+.register .register__content .register__form .register__form__right .form-group input:focus {
+  border-color: rgba(0, 0, 0, 0.438);
+  box-shadow: none;
+}
+.register .register__content .register__form .register__form__right .form-group .error-message {
+  color: red;
+}
+.register .register__content .register__form .register__form__right .form-group .form-check .form-check-input:checked {
+  background-color: black;
+  border-color: black;
+}
+.register .register__content .register__form .register__form__right .register__form__btn {
+  background-color: black;
+  color: white;
+  padding: 12px 7px;
+  border-radius: 0;
 }/*# sourceMappingURL=details.css.map */
