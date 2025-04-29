@@ -51,13 +51,11 @@
   </head>
 
   <body>
-    <!-- header -->
-    <!-- <a href="./customer/Detail/detail.html">details</a> -->
-
+    <!-- Header -->
     <header>
       <div class="container">
         <div class="header-content">
-          <a href="#" class="header-logo"
+          <a href="/index.html" class="header-logo"
             >Converse
             <i class="fa-solid fa-shoe-prints"></i>
           </a>
@@ -83,133 +81,62 @@
         </div>
       </div>
     </header>
-    <!-- banner -->
-    <section class="banner">
-      <div class="container">
-        <div>
-          <img src="../../asset/img/TrangChu_img/Banner-loveChuck.jpg" alt="" />
+    <!-- Shopping Cart -->
+    <section class="shopping_cart">
+      <div class="container py-5">
+        <div class="text-center mb-4">
+          <h1 class="fw-bold display-3 mb-2">CART</h1>
+          <!-- cart-item-count -->
+          <span id="cart-item-count" class="fw-semibold text-muted"
+            >0 ITEMS</span
+          >
         </div>
 
-        <div class="banner-button">
-          <button>Watch Video</button>
-          <button>Shop Chucks</button>
+        <div class="alert alert-info text-center mb-4" role="alert">
+          You get 50% Off on Socks with a Shoe Purchase! Shop Socks
+          <a
+            href="/customer/Trang_Chu/ProductItem/product-Item.html"
+            class="fw-semibold text-decoration-underline"
+            >Mua ngay</a
+          >
         </div>
-      </div>
-    </section>
-    <!-- custome-platforms -->
-    <section class="custome-platforms">
-      <div class="container">
-        <div class="custome">
-          <!--IMG-->
-          <div class="custome-img">
-            <img
-              id="main-image"
-              src="../../asset/img/TrangChu_img/black_converse.jpg"
-              alt="Product"
-            />
+
+        <div class="row g-5">
+          <!-- Cart Items -->
+          <div class="col-lg-7">
+            <div id="cart-items"></div>
           </div>
-          <!--Text -->
-          <div class="custome-text">
-            <div class="option text1" data-img="black_converse.jpg">
-              HIGH TOPS
-            </div>
-            <div class="option" data-img="Black_smalConverse.jpg">LOW TOPS</div>
-            <div class="option" data-img="Low_TopConvere_mauDa.jpg">
-              PLATFORMS
-            </div>
-            <div class="option" data-img="D-Converse-Homepage-P2D-Custom.gif">
-              CUSTOM
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- profile-style -->
-    <section class="profile-style">
-      <div class="container">
-        <div class="profile">
-          <div class="profile-img">
-            <img src="../../asset/img/TrangChu_img/profile-style.jpg" alt="" />
-          </div>
-          <div class="profile-text">
-            <h3>NEW SUMMER COLLECTION</h3>
-            <h1>
-              LOW PROFILE. <br />
-              High PROFILE.
-            </h1>
-          </div>
-          <div class="profile-button">
-            <button>Shop</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Design-custome -->
-    <section class="design-custom">
-      <div class="container">
-        <div class="design">
-          <div class="design-left">
-            <img src="./asset/img/TrangChu_img/DesignShoes.gif" alt="" />
-            <div class="design-textLeft">
-              <h3>Design your summer shoe</h3>
-              <h1>CUSTOM</h1>
-            </div>
-            <div class="design-buttonLeft">
-              <button>Customise</button>
-            </div>
-          </div>
-          <div class="design-right">
-            <img src="./asset/img/TrangChu_img/Kenzo4.jpg" alt="" />
-            <div class="design-textRight">
-              <h3>Available now</h3>
-              <h1>CONVERSE X KENZO</h1>
-            </div>
-            <div class="design-buttonRight">
-              <button>Shop</button>
+
+          <!-- Order Summary -->
+          <div class="col-lg-5">
+            <div class="border rounded-3 p-4" style="background-color: #fafafa">
+              <h4 class="fw-bold display-6 mb-4">ORDER SUMMARY</h4>
+              <!-- Cart total -->
+              <div id="cart-total" class="summary-section"></div>
+              <div class="mb-3">
+                <label for="promo" class="form-label">Promo Code</label>
+                <input
+                  type="text"
+                  id="promo"
+                  class="form-control"
+                  placeholder="Nhập mã giảm giá"
+                />
+              </div>
+              <button id="checkout-btn" class="btn btn-dark w-100 mb-3">
+                Check Out
+              </button>
+              <button class="btn btn-outline-primary w-100">
+                Check Out with PayPal
+              </button>
+              <p class="text-center mt-3 text-muted" style="font-size: 0.8rem">
+                🔒 Check Out Safety
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Product_item -->
-    <section class="product-item">
-      <div class="container">
-        <div class="product-Text">
-          <div class="new-arrivals">
-            <h2>NEW ARRIVALS</h2>
-            <a
-              href="./customer/Trang_Chu/ProductItem/product-Item.html"
-              class="shop-all"
-              >→ Shop All New Arrivals</a
-            >
-          </div>
-        </div>
-        <div class="slider-container">
-          <div id="slider" class="slider"></div>
-        </div>
-      </div>
-    </section>
-    <!-- SignUp_banner -->
-    <section class="signUp-banner">
-      <div class="container">
-        <div class="signUp">
-          <img src="./asset/img/TrangChu_img/signUp_banner.jpg" alt="" />
-          <div class="signUp-text">
-            <h1>NEVER MISS A BEAT</h1>
-            <p>
-              Sign up for <span class="fw-bold">20%</span> off your next
-              purchase and <span class="fw-bold">25%</span> of a <br />
-              purchase during your birthday month -- Plus Converse updates
-              <br />
-              straight to your inbox. Exclusion Apply,
-              <span class="text-decoration-underline fw-bold seeDetail">
-                see details</span
-              >.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!-- Footer -->
     <footer class="footer mt-2 mt-md-4 pt-md-4">
       <!-- footer top -->
@@ -425,24 +352,18 @@
       </div>
     </footer>
 
+    <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
-    <!-- bootstrap -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <!-- flowbite -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- Api axious -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/asset/src/TrangChu_js/index.js"></script>
+    <script src="/asset/src/ShoppingCart_Js/index.js"></script>
   </body>
 </html>
