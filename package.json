@@ -13,6 +13,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "sass": "sass asset/sass/style.scss asset/css/style.css --watch",
     "preview": "vite preview"
   }
 }
