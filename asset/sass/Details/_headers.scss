@@ -1,4 +1,5 @@
 header {
+
   // header top
   .header__top {
     .header__top__lang {
@@ -51,45 +52,76 @@ header {
 
   // header below
   .header__below {
-    .header__below__logo {
-      a {
-        img {
-          width: 25px;
-          height: auto;
-        }
-      }
-    }
-
-    .navbar-toggler {
-      button {
-        span {
-          font-size: 25px;
+    .container {
+      .header__below__logo {
+        a {
+          img {
+            width: 25px;
+            height: auto;
+          }
         }
       }
 
-      .navbar-collapse {
+      .navbar-toggler {
+        button {
+          span {
+            font-size: 25px;
+          }
+        }
+
+        .navbar-collapse {
+          ul {
+            li {
+              margin: 5px 0;
+              a {
+                font-size: 14px;
+                font-weight: bold;
+                transition: all 0.3s ease;
+                position: relative;
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  bottom: -5px;
+                  left: 0;
+                  width: 0%;
+                  height: 3px;
+                  background-color: black;
+                  transition: width 0.3s ease;
+                }
+
+                &:hover::after {
+                  width: 100%;
+                }
+              }
+            }
+
+            &:hover {
+              li a {
+                color: #9b9b9b;
+              }
+
+              li a:hover {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+
+      .navbar-display {
         ul {
           li {
-            margin: 5px 0;
+            padding: 0 15px;
+
             a {
               font-size: 14px;
               font-weight: bold;
               transition: all 0.3s ease;
-              position: relative;
 
-              &::after {
-                content: "";
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                width: 0%;
-                height: 3px;
-                background-color: black;
-                transition: width 0.3s ease;
-              }
-
-              &:hover::after {
-                width: 100%;
+              &:hover {
+                padding-bottom: 3px;
+                border-bottom: solid 3px black;
               }
             }
           }
@@ -97,6 +129,10 @@ header {
           &:hover {
             li a {
               color: #9b9b9b;
+
+              // &:hover {
+              //   color: black;
+              // }
             }
 
             li a:hover {
@@ -105,58 +141,27 @@ header {
           }
         }
       }
-    }
 
-    .navbar-display {
-      ul {
-        li {
-          padding: 0 15px;
-
-          a {
-            font-size: 14px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-
-            &:hover {
-              padding-bottom: 3px;
-              border-bottom: solid 3px black;
-            }
-          }
+      .header__below__features {
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 18px;
+          padding: 0 3px;
         }
 
         &:hover {
-          li a {
+          a {
             color: #9b9b9b;
 
-            // &:hover {
-            //   color: black;
-            // }
-          }
-
-          li a:hover {
-            color: black;
-          }
-        }
-      }
-    }
-
-    .header__below__features {
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 18px;
-        padding: 0 3px;
-      }
-
-      &:hover {
-        a {
-          color: #9b9b9b;
-
-          &:hover {
-            color: black;
+            &:hover {
+              color: black;
+            }
           }
         }
       }
     }
   }
 }
+
+

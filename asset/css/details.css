@@ -230,23 +230,23 @@ header .header__top .header__top__features:hover a {
 header .header__top .header__top__features:hover a:hover {
   color: white;
 }
-header .header__below .header__below__logo a img {
+header .header__below .container .header__below__logo a img {
   width: 25px;
   height: auto;
 }
-header .header__below .navbar-toggler button span {
+header .header__below .container .navbar-toggler button span {
   font-size: 25px;
 }
-header .header__below .navbar-toggler .navbar-collapse ul li {
+header .header__below .container .navbar-toggler .navbar-collapse ul li {
   margin: 5px 0;
 }
-header .header__below .navbar-toggler .navbar-collapse ul li a {
+header .header__below .container .navbar-toggler .navbar-collapse ul li a {
   font-size: 14px;
   font-weight: bold;
   transition: all 0.3s ease;
   position: relative;
 }
-header .header__below .navbar-toggler .navbar-collapse ul li a::after {
+header .header__below .container .navbar-toggler .navbar-collapse ul li a::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -256,43 +256,43 @@ header .header__below .navbar-toggler .navbar-collapse ul li a::after {
   background-color: black;
   transition: width 0.3s ease;
 }
-header .header__below .navbar-toggler .navbar-collapse ul li a:hover::after {
+header .header__below .container .navbar-toggler .navbar-collapse ul li a:hover::after {
   width: 100%;
 }
-header .header__below .navbar-toggler .navbar-collapse ul:hover li a {
+header .header__below .container .navbar-toggler .navbar-collapse ul:hover li a {
   color: #9b9b9b;
 }
-header .header__below .navbar-toggler .navbar-collapse ul:hover li a:hover {
+header .header__below .container .navbar-toggler .navbar-collapse ul:hover li a:hover {
   color: black;
 }
-header .header__below .navbar-display ul li {
+header .header__below .container .navbar-display ul li {
   padding: 0 15px;
 }
-header .header__below .navbar-display ul li a {
+header .header__below .container .navbar-display ul li a {
   font-size: 14px;
   font-weight: bold;
   transition: all 0.3s ease;
 }
-header .header__below .navbar-display ul li a:hover {
+header .header__below .container .navbar-display ul li a:hover {
   padding-bottom: 3px;
   border-bottom: solid 3px black;
 }
-header .header__below .navbar-display ul:hover li a {
+header .header__below .container .navbar-display ul:hover li a {
   color: #9b9b9b;
 }
-header .header__below .navbar-display ul:hover li a:hover {
+header .header__below .container .navbar-display ul:hover li a:hover {
   color: black;
 }
-header .header__below .header__below__features a {
+header .header__below .container .header__below__features a {
   text-decoration: none;
   color: black;
   font-size: 18px;
   padding: 0 3px;
 }
-header .header__below .header__below__features:hover a {
+header .header__below .container .header__below__features:hover a {
   color: #9b9b9b;
 }
-header .header__below .header__below__features:hover a:hover {
+header .header__below .container .header__below__features:hover a:hover {
   color: black;
 }
 
